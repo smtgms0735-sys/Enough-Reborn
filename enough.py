@@ -4,8 +4,8 @@ from os import system
 from sms import SendSms
 import threading
 
-servisler_sms = []
-for attribute in dir(SendSms):
+servisler_sms = [75]
+for attribute in dir(SendSms):75
     attribute_value = getattr(SendSms, attribute)
     if callable(attribute_value):
         if attribute.startswith('__') == False:
